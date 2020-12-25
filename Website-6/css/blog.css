@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+:root {
+  	--color-orange:#c23616;
+	--color-white:#f5f6fa;
+	--color-bluen:#353b48;
+	--color-elec:#2f3640;
+	--animed:all 0.4s ease;
+}
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-family: "Ubuntu",sans-serif;
+}
+
+/* ==== nav Styling ==== */
+.nav{
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	padding: 3rem 6rem 3rem 6rem;
+	text-align: start;
+	align-items: center;
+	transition: all 0.4s ease;
+	z-index: 99;
+}
+
+.nav.nav-sticky{
+	text-align: center;
+	background-color: var(--color-orange);
+	color: var(--color-white);
+}
+
+.nav.nav-sticky a{
+	color: var(--color-white);
+}
+
+.nav a{
+	color: var(--color-orange);
+	font-size: 55px;
+	font-weight: 700;
+	line-height: 15px;
+	
+}
+
+.nav a span{
+	color: var(--color-white);
+}
+/* ==== header Styling ==== */
+
+.header{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: url(../image/bacground-6.jpg);
+	background-clip: border-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 6rem 6rem 6rem 6rem ;
+	
+}
+
+.blog {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: auto;
+	height:auto;
+	transform: translate(-50%,-50%);
+	align-items: center;
+	text-align: center;
+	
+}
+
+.blog .header-title{
+	font-size: 200px;
+	font-weight: 800;
+	color: var(--color-white);
+}
+
+/* ==== body Styling ==== */
+
+.general{
+	width: 100%;
+	height: auto;
+	padding: 6rem 6rem 6rem 6rem;
+	background-color: #8395a7;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	justify-content: space-around;
+	padding: 2rem 6rem 2rem 6rem;
+}
+
+.row .card{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background-color: var(--color-white);
+	margin-bottom: 5rem;
+	color: var(--color-bluen);
+	transition: var(--animed);
+}
+
+.row .card:hover{
+	transform: scale(1.05);
+	box-shadow: 0px 2px 5px 0px lightgray;
+}
+
+.card .card-img{
+	width: 100%;
+	height: 200px;
+	
+}
+
+.card .card-img img{
+	width: 100%;
+	height: 200px;
+
+}
+
+.card .card-body{
+	width: 100%;
+	height: 110px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+.card-title{
+	color: var(--color-orange);
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.card-text{
+	text-align: justify;
+	padding: 5px 8px 2px 8px;
+	overflow: hidden;
+}
+
+.card .card-footer{
+	width: 100%;
+	height: 40px;
+	background-color: var(--color-orange);
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.card-btn-link{
+	color: var(--color-white);
+	width: 100%;
+	height: 100%;
+}
+
+
+
+footer{
+	width: 100%;
+	padding: 20px 23px;
+	background-color: rgba(53, 59, 72,1);
+	color: #f5f6fa;
+	font-family: 'Poppins' , sans-serif;
+	text-align: center;
+}
+footer span a{
+	color: #c23616;
+	text-decoration: none;
+}
+footer span a:hover{
+	text-decoration: underline;
+}

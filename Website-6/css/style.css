@@ -1,0 +1,1158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+.scroll-up-btn{
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	border-radius: 8px;
+	background-color: #c23616;
+	right: 30px;
+	bottom: 30px;
+	text-align: center;
+	line-height: 45px;
+	color: #f5f6fa;
+	z-index: 995;
+	font-size: 30px;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.4s ease;
+}
+
+
+
+.scroll-up-btn:hover{
+	border: 2px solid #c23616;
+	color: #c23616;
+	background: transparent;
+}
+
+.scroll-up-btn.show{
+	bottom: 30px;
+	opacity: 1;
+	pointer-events:auto;
+}
+
+/* === navbar styling === */
+
+.navbar{
+	position: fixed;
+	width: 100%;
+	padding: 30px 0;
+	/*background-color: crimson;*/
+	font-family: "Ubuntu",sans-serif;
+	transition: all 0.3s ease;
+	z-index: 995;
+}
+
+.navbar.sticky{
+	padding: 10px 0;
+	background-color: #c23616;
+	font-family: "Ubuntu",sans-serif;
+}
+
+
+
+.navbar .max-width {
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: all 0.3s ease;
+	
+}
+
+
+
+
+.logo a{
+	color: #f5f6fa;
+	font-size: 35px;
+	font-weight: 600;
+	
+}
+
+.logo a span{
+	color: #c23616;
+}
+
+.navbar.sticky .logo a span{
+	color: #f5f6fa;
+	transition: all 0.3s ease;
+}
+
+
+.menu li{
+	list-style: none;
+	display: inline-block;
+}
+
+
+
+
+.menu li a{
+	display: block;
+	color: #f5f6fa;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 15px;
+	transition: color 0.3s ease;
+}
+
+.menu li a:hover{
+	color:#c23616;
+}
+
+
+.navbar.sticky .menu li a:hover{
+	color: #f5f6fa;
+}
+
+/* ======== menu btn styling ======== */
+.menu-btn{ 
+	color: #c23616;
+	font-size: 25px;
+	cursor: pointer;
+	display: none;
+	
+}
+
+.fas .fa-bars,
+.fas .fa-times{
+	transition: all 0.8s ease;
+}
+
+.menu-btn.btn-sticky{
+	color: #f5f6fa;
+}
+
+
+/* ======= Home Section Styling ============= */
+
+.home{
+	display: flex;
+	background: url("../image/background--5.jpg") no-repeat center;
+	background-size:cover;
+	height: 100vh;
+	color: #f5f6fa;
+	min-height:500px;
+	font-family: "Ubuntu",sans-serif;
+}
+
+.home .max-width{
+	margin: auto 0 auto 40px;
+	transition: all 0.3s ease;
+}
+
+.home .home-content{
+	position: absolute;
+}
+
+
+.home-content .text-1{
+	font-size: 27px;
+}
+
+.home-content .text-2{
+	font-size: 75px;
+	font-weight: 600;
+	margin-left: -3px;
+	transition: all 0.3s ease;
+}
+
+.home-content .text-3{
+	font-size: 40px;
+	margin: 5px 0;
+	transition: all 0.3s ease;
+}
+
+.home-content .text-3 span{
+	color: #c23616;
+	font-weight: 500;
+}
+
+.home-content .HireMe{
+	font-family: "Ubuntu",sans-serif;
+	display: inline-block;
+	background-color: #c23616;
+	color: #f5f6fa;
+	font-size: 25px;
+	padding: 12px 36px;
+	margin-top: 2rem;
+	border-radius: 8px;
+	border: 2px solid #c23616;
+	transition: all 0.4s ease;
+}
+
+.home-content .HireMe:hover{
+	color: #c23616;
+	background: none;
+}
+
+/* === All similar content styling code === */
+section{
+	padding: 10rem 0;
+}
+
+section .title{
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 6rem;
+	padding-bottom: 2rem;
+	font-family: 'Ubuntu' ,sans-serif;
+}
+section .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 210px;
+	height: 3px;
+	background-color: #c23616;
+	transform: translateX(-50%);
+}
+section .title::after{
+	content: "";
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	font-size: 20px;
+	color: #c23616;
+	padding: 5px;
+	background-color:white;
+	transform: translateX(-50%);
+}
+
+
+/* === About Section Styling === */
+
+.about{
+	font-family: 'Poppins' ,sans-serif;
+	padding: 60px 60px 60px 60px;
+}
+
+.about .title::after{
+	content: "mən kiməm";
+}
+
+.about .about-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about .about-content .left{
+	width: 45%;
+	
+}
+
+.about .about-content .left img{
+	height: 400px;
+	width: 400px;
+	object-fit: cover;
+	border-radius: 10px;
+	padding-right:20px ;
+}
+
+
+
+.about .about-content .right{
+	width: 55%;
+	
+}
+
+.about .about-content .right .text{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+
+.about .about-content .right .text span{
+	color: #c23616;
+}
+
+.about .about-content .right p{
+	text-align: justify;
+}
+
+.about .about-content .right a{
+	display: inline-block;
+	background-color: #c23616;
+	color: #f5f6fa;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 10px 30px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid #c23616;
+	transition: all 0.4s ease;
+}
+
+.about .about-content .right a:hover{
+	color: #c23616;
+	background: none;
+}
+
+
+
+/* === Services Section Styling === */
+
+.services{
+	color: #f5f6fa;
+	background-color: rgba(47, 54, 64,1);
+	padding: 60px 60px 60px 60px;
+	font-family: 'Poppins' , sans-serif;
+}
+
+
+.services .title::before{
+	background-color: #c23616;
+}
+
+.services .title::after{
+	background-color: rgba(47, 54, 64,1);
+	color: #c23616;
+	content: "nə ilə təmin edirəm";
+	font-size: 15px;
+}
+
+
+.services .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 180px;
+	height: 3px;
+	background-color: #c23616;
+	transform: translateX(-50%);
+}
+
+.services .services-content{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.services .services-content .card{
+	width: 30%;
+	background-color: rgba(53, 59, 72,1);
+	text-align: center;
+	border-radius: 6px;
+	padding: 20px 25px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+
+
+.services .services-content .card:hover{
+	background-color: #c23616;
+}
+
+
+.services .services-content .card .box{
+	transition: all 0.4s ease;
+}
+
+.services .services-content .card:hover .box{
+	transform: scale(1.05);
+}
+
+
+.services .services-content .card i{
+	font-size:50px;
+	color: #c23616;
+	transition: all 0.3s ease;
+}
+
+.services .services-content .card:hover i{
+	color: #f5f6fa;
+}
+
+.services .services-content .card .text{
+	font-size: 25px;
+	font-weight: 600;
+	margin:10px 0 7px 0;
+}
+
+
+
+
+
+/* === Skills Section Styling === */
+
+.skills, .teams{
+	width: 100%;
+	font-family: 'Poppins' , sans-serif;
+	padding: 6rem 6rem 6rem 6rem;
+	transition: all 0.4s ease;
+
+}
+
+
+
+.skills .skills-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s ease;
+}
+
+.skills .title::after{
+	content: "nə bilirəm";
+}
+
+.skills .skills-content .column{
+	width: 50%;
+	transition: all 0.4s ease;
+}
+
+.skills .skills-content .left{
+	padding-right: 15px;
+}
+
+.skills .skills-content .left .text{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	transition: all 0.4s ease;
+}
+
+
+.skills .skills-content .left p{
+	text-align: justify;
+}
+
+.skills .skills-content .left a{
+	display: inline-block;
+	background-color: #c23616;
+	color: #f5f6fa;
+	font-size: 17px;
+	font-weight: 600;
+	padding: 8px 16px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid #c23616;
+	transition: all 0.4s ease;
+
+
+
+}
+
+
+.skills .skills-content .left a:hover{
+	color: #c23616;
+	background: none;
+}
+
+.skills .skills-content .right{
+	padding-left: 15px;
+	transition: all 0.4s ease;
+}
+
+
+.skills .skills-content .right .bars{
+	margin-bottom: 1.5rem;
+	transition: all 0.4s ease;
+}
+
+.skills .skills-content .right .infor{
+	display: flex;
+	margin-bottom: 5px;
+	align-items: center;
+	justify-content: space-between;
+	transition: all 0.4s ease;
+}
+
+
+.skills .skills-content .right span{
+	font-weight: 400;
+	font-size: 16px;
+}
+
+
+.skills .skills-content .right .line{
+	height: 5px;
+	width: 100%;
+	background-color: lightgrey;
+	position: relative;
+}
+
+
+.skills .skills-content .right .line::before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #c23616;
+
+}
+
+.skills-content .right .js::before{
+	width: 75%;
+}
+
+.skills-content .right .react::before{
+	width: 75%;
+}
+
+
+.skills-content .right .jquery::before{
+	width: 90%;
+}
+
+
+.skills-content .right .html::before{
+	width: 90%;
+}
+
+
+.skills-content .right .css::before{
+	width: 90%;
+}
+
+.skills-content .right .Sass::before{
+	width: 90%;
+}
+
+
+.skills-content .right .bootstrap::before{
+	width: 85%;
+}
+
+.skills-content .right .material-ui::before{
+	width: 85%;
+}
+
+
+.skills-content .right .primereact::before{
+	width: 85%;
+}
+
+
+.skills-content .right .figma::before{
+	width: 75%;
+}
+
+
+.skills-content .right .coreldraw::before{
+	width: 80%;
+}
+
+
+.skills-content .right .python::before{
+	width: 65%;
+}
+
+
+.skills-content .right .sql::before{
+	width: 70%;
+}
+
+.skills-content .right .mysql::before{
+	width: 70%;
+}
+
+
+
+/* === Teams  Section Styling === */
+
+.teams{
+	width: 100%;
+	background-color: rgba(47, 54, 64,1);
+	color: #f5f6fa;
+	font-family: 'Poppins' , sans-serif;
+	padding: 6rem 6rem 6rem 6rem;
+	transition: all 0.4s ease;
+}
+
+.teams .title::before{
+	background-color: #c23616;
+}
+.teams .title::after{
+	content: "kim mənimlə";
+	background-color: rgba(47, 54, 64,1);
+}
+
+
+.teams .carousel .card{
+	background-color: rgba(53, 59, 72,1);
+	border: 6px;
+	padding: 25px 35px;
+	text-align: center;
+	transition: all 0.4s ease;
+	cursor: pointer;
+}
+
+
+.teams .carousel .card:hover{
+	background-color: #c23616;
+	
+}
+
+
+.teams .carousel .card:hover .box{
+	transform: scale(1.05);
+}
+
+
+.teams .carousel .card .box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s ease;
+}
+
+
+.teams .carousel .card .text{
+	font-size: 25px;
+	font-weight: 500;
+	margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card img{
+	height: 150px;
+	width: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 5px solid #c23616;
+	transition: all 0.4s ease;
+}
+
+
+.teams .carousel .card:hover img{
+	border-color: #f5f6fa;
+	
+}
+
+
+
+
+/* ==== Owl Styling ==== */
+
+.owl-dots{
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.owl-dot{
+	height: 13px;
+	width:13px;
+	margin: 0 5px;
+	outline: none !important;
+	border: 2px solid #c23616 !important;
+	transition: all 0.4s ease;
+}
+
+
+
+.owl-dot.active{
+	width: 35px;
+	border-radius: 14px;
+}
+
+
+.owl-dot.active,
+.owl-dot:hover{
+	background-color: #c23616 !important;
+}
+
+
+
+
+
+/* ==== Contact Styling ==== */
+.contact{
+	width: 100%;
+	padding: 6rem 6rem 6rem 6rem;
+	transition: all 0.4s ease;
+	font-family: 'Poppins' , sans-serif;
+}
+
+
+
+.contact .contact-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+.contact .title::after{
+	content: "əlaqədə olmaq";
+}
+
+
+
+
+.contact .contact-content .column{
+	width: 50%;
+}
+
+
+.contact .contact-content .column .left{
+	padding-right: 15px;
+}
+
+
+.contact .contact-content .text{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	
+}
+
+
+
+.contact .contact-content .left p{
+	text-align: justify;
+	width: 100%;
+	padding-right: 15px;
+	margin-bottom: 15px;
+}
+
+
+
+.contact .contact-content .left .icons{
+	margin: 10px 0;
+}
+
+
+.contact .contact-content .row{
+	display: flex;
+	height: 65px;
+	align-items: center;
+}
+
+
+
+
+.contact .contact-content .row .infor{
+	margin-left: 30px;
+}
+
+
+
+.contact .contact-content .row i{
+	font-size: 25px;
+	color: #c23616;
+}
+
+
+
+
+.contact .contact-content .infor .head{
+	font-weight: 500;
+
+}
+
+
+.contact .contact-content .infor .sub-title{
+	color: rgba(53, 59, 72,1);
+}
+
+
+
+.contact .right form .fields{
+	display: flex;
+
+}
+
+
+.contact .right form .field,
+.contact .right form .fields .field{
+	height: 45px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+
+.contact .right form .name{
+	margin-right: 10px;
+}
+
+
+
+
+.contact .right form .email{
+	margin-left: 10px;
+}
+
+
+
+
+.contact .right form .textarea{
+	height: 80px;
+	width: 100%;
+}
+
+
+
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+	height: 100%;
+	width: 100%;
+	border: 1px solid lightgrey;
+	border-radius: 6px;
+	outline: none;
+	padding: 0 15px;
+	font-size: 17px;
+	font-family: 'Poppins' , sans-serif;
+}
+
+.contact .right form .textarea textarea{
+	margin-top: 10px;
+	resize: none;
+}
+
+
+.contact .right form .button{
+	height: 47px;
+	width: 100%;
+}
+
+.contact .right form .button button{
+	width: 100%;
+	height: 100%;
+	background-color: #c23616;
+	color: #f5f6fa;
+	font-size: 17px;
+	font-weight: 600;
+	padding: 8px 16px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid #c23616;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+
+
+.contact .right form .button button:hover{
+	color: #c23616;
+	background: none;
+}
+
+
+/* ==== Footer Styling ==== */
+
+footer{
+	width: 100%;
+	padding: 20px 23px;
+	background-color: rgba(53, 59, 72,1);
+	color: #f5f6fa;
+	font-family: 'Poppins' , sans-serif;
+	text-align: center;
+}
+
+
+footer span a{
+	color: #c23616;
+	text-decoration: none;
+}
+
+
+footer span a:hover{
+	text-decoration: underline;
+}
+
+
+
+/* ===== Responsive media query start ===== */
+
+
+
+/* ===== Responsive media query max-width:1300px start  ===== */
+@media (max-width:1300px){
+	
+	.max-width{
+		padding: 0 40px;
+	}
+	
+	
+}
+/* ===== Responsive media query  max-width:1300px END ===== */
+
+
+
+
+
+/* ===== Responsive media query max-width:1115px start  ===== */
+@media (max-width:1115px){
+	
+	.max-width{
+		padding: 0 40px;
+	}
+	
+	.about .about-content .left img{
+		height: 350px;
+		width: 350px;
+	}
+
+	.about .about-content .right .text{
+		font-size: 20px;
+	}
+
+	.about .about-content .right .text span{
+		font-size: 20px;
+	}
+
+	.services .services-content .card{
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+}
+/* ===== Responsive media query  max-width:1115px END ===== */
+
+
+
+/* ===== Responsive media query start max-width:991px ===== */
+@media (max-width:991px){
+	.max-width{
+		padding: 0 40px;
+	}
+
+	.services .services-content .card{
+		width: 100%;
+	
+	}
+	
+}
+/* ===== Responsive media query start max-width:991px ===== */
+
+
+
+
+/* ===== Responsive media query start max-width:970px ===== */
+@media (max-width:970px){
+
+	.navbar .menu{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background-color:rgba(53, 59, 72,1.0);
+		left: -100%;
+		top: 0;
+		text-align: center;
+		padding-top: 8rem;
+		transition: all 0.3s ease;
+	}
+
+	.navbar .menu.active{
+		left: 0;
+	}
+
+	.navbar .menu.active-2{
+		left: 0;
+	}
+
+	.navbar .menu li{
+		display: block;
+	}
+
+	.navbar .menu li a{
+		display: inline-block;
+		margin: 20px 0;
+		font-size: 25px;
+	}
+
+	.menu-btn{
+		display: block;
+		z-index: 999;
+	}
+
+	.fas .fa-bars,
+	.fas .fa-times{
+		transition: all 0.8s ease;
+	}
+
+
+
+
+
+	/* ==== Home Styling ==== */
+
+	.home-content .text-2{
+		font-size: 65px;
+	}
+
+	.home-content .text-3{
+		font-size: 35px;
+	}
+
+	.home-content .HireMe{
+		font-size: 23px;
+		padding: 10px 30px;
+	}
+
+
+
+
+	/* ==== About Styling ==== */
+
+
+	.max-width{
+		width: 100%;
+	}
+
+	.about .about-content .column{
+		width: 100%;
+	}
+
+
+	.about .about-content .left{
+		display: flex;
+		justify-content:center;
+		margin: 0 auto 6rem;
+	}
+
+
+	.about .about-content .right p{
+		width:100%;
+
+	}
+
+	
+	.services .services-content .card{
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+
+	.skills .skills-content .column{
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.contact .contact-content .column{
+		width: 100%;
+		margin-top: 50px;
+	}
+	
+}
+/* ===== Responsive media query start max-width:970px ===== */
+
+
+
+
+/* ===== Responsive media query max-width:690px start  ===== */
+@media (max-width:690px){
+
+	.navbar .max-width{
+		padding: 0 40px;
+	}
+
+	.home .max-width{
+		padding: 0;
+	}
+
+	.home-content .text-2{
+		font-size: 55px;
+	}
+	.home-content .text-3{
+		font-size: 30px;
+	}
+
+	.home-content .HireMe{
+		font-size: 20px;
+		padding: 8px 23px;
+	}
+
+
+	.about .about-content .right a{
+		font-size: 16px;
+		padding: 10px 20px;
+	}
+
+	.skills .skills-content .column,
+	.services .services-content .card{
+		width: 100%;
+		
+	}
+
+}
+/* ===== Responsive media query  max-width:690px END ===== */
+
+
+
+
+/* ===== Responsive media query max-width:623px start  ===== */
+@media (max-width:623px){
+	.max-width{
+		padding: 0 19px;
+	}
+	
+	.home-content .text-2{
+		font-size: 45px;
+	}
+	.home-content .text-3{
+		font-size: 25px;
+	}
+
+	.home-content .HireMe{
+		font-size: 17px;
+		padding: 5px 15px;
+	}
+
+	.about .about-content .right .text{
+		font-size: 16px;
+	}
+
+	.about .about-content .right .text span{
+	font-size: 16px;
+	}
+
+	.about .about-content .right p{
+		font-size: 14px;
+	}
+
+	.about .about-content .right a{
+		font-size: 16px;
+		padding: 8px 15px;
+	}
+
+	.contact, .teams, .about , .skills{
+		padding: 4rem 1.5rem 4rem 1.5rem ;
+	}
+
+
+	footer{
+		font-size: 14px;
+	}
+	footer span a{
+		font-size: 14px;
+	}
+}
+/* ===== Responsive media query  max-width:623px END ===== */
